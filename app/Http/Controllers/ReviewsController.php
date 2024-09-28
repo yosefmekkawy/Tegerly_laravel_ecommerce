@@ -9,10 +9,9 @@ use Illuminate\Support\Facades\Auth;
 
 class ReviewsController extends Controller
 {
-    // Method to store a new review
     public function store(Request $request)
     {
-        // Validate request data
+
         $validated = $request->validate([
             'product_id' => 'required|exists:products,id',
             'rating' => 'required|in:1,2,3,4,5',
@@ -28,7 +27,7 @@ class ReviewsController extends Controller
             return redirect()->back()->with('error', 'You cannot review a product you haven\'t ordered or received yet.');
         }
 
-        // Create the review
+  
         Reviews::create([
             'user_id' => Auth::id(),
             'product_id' => $validated['product_id'],
@@ -39,7 +38,7 @@ class ReviewsController extends Controller
         return redirect()->back()->with('success', 'Review submitted successfully.');
     }
 
-    // Display all reviews (for admin)
+    // display all reviews for admin
     public function index()
     {
         $reviews = Reviews::with('user', 'product')->paginate(10);
