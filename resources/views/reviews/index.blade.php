@@ -11,7 +11,7 @@
                 <p>{{ __('pages.no_reviews') }}</p>
             </div>
         @else
-            <!-- Opening table tag -->
+
             <table class="table table-bordered">
                 <thead>
                 <tr>
@@ -45,9 +45,9 @@
                     </tr>
                 @endforeach
                 </tbody>
-            </table> <!-- Closing table tag -->
+            </table> 
 
-            <!-- Pagination Links -->
+      
             <div class="d-flex justify-content-center">
                 {{ $reviews->links() }}
             </div>
