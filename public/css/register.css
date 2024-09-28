@@ -1,0 +1,26 @@
+body {
+  background-color: #f8f8f8;
+  scroll-behavior: smooth;
+}
+
+section.register .container {
+  /* min-height: 60vh; */
+  /* box-shadow: 0 15px 16.83px 0.17px rgba(0, 0, 0, 0.05); */
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  border-radius: 20px;
+}
+.register {
+  min-height: 100vh;
+}
+.form-control:focus {
+  border: 1px solid #0d6efd;
+  box-shadow: none;
+  /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6); */
+}
+.input-group {
+  border-width: 0 0 1px 0;
+  border: none;
+  outline-width: 0;
+}

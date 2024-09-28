@@ -1,0 +1,36 @@
+body {
+  background-color: #f8f8f8;
+  scroll-behavior: smooth;
+}
+
+section.login .container {
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 20px,
+    rgba(0, 0, 0, 0.2) 0px 10px 10px; */
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.login {
+  min-height: 90vh;
+}
+.form-control:focus {
+  border: 1px solid #0d6efd;
+  box-shadow: none;
+}
+.input-group {
+  border-width: 0 0 1px 0;
+  border: none;
+  outline-width: 0;
+}
+
+/*
+.form-control:focus {
+  border: 1px solid #0d6efd;
+  box-shadow: none;
+}
+.input-group {
+  border-width: 0 0 1px 0;
+  border: none;
+  outline-width: 0;
+} */

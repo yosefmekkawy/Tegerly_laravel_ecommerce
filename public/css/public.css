@@ -1,0 +1,32 @@
+.form-control:focus {
+    border: 1px solid #0d6efd;
+    box-shadow: none;
+}
+.input-group {
+    border-width: 0 0 1px 0;
+    border: none;
+    outline-width: 0;
+}
+.underline{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 40px 0 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    position: relative;
+}
+.underline:after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #0d6efd;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.pagination{
+    margin-top: 1rem;
+}
