@@ -5,7 +5,6 @@
         <div class="row">
                 @include('components.sidebar')
 
-            <!-- Main Content Area -->
             <div class="col-lg-12">
                 <h1 class="text-center mt-2 underline">{{__('pages.categories')}}</h1>
                 <div class="row justify-content-between gy-2">
@@ -77,7 +76,6 @@
     <script>
         let categories = @json($categories);
 
-        // Now you can use the 'categories' object directly
         console.log(categories);
 
         document.querySelector('.side-categories').classList.add('active');
@@ -96,7 +94,6 @@
                     cancelButtonText:'{{__('pages.no')}}'
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        // Perform the delete action by redirecting to the delete URL
                         window.location.href = `/delete-item?model=categories&id=${categoryId}`;
                     }
                 });
